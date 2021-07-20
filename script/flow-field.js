@@ -19,6 +19,11 @@ class FlowField {
       background(this.backgroundColor);
       this.isInit = true;
     }
+
+    destroy(){
+        this.particles = [];
+        this.isInit = false;
+    }
   
     draw() {
       if (!this.isInit) {
